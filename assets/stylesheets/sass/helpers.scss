@@ -1,0 +1,65 @@
+/************
+CSS HELPERS
+Place for css helper classes
+*************/
+
+.center-item {
+  margin: 0 auto;
+}
+
+.center-item-flex {
+  align-self: center;
+}
+
+.flex-item-end {
+  align-self: flex-end;
+}
+
+.center-items-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-items-vertical {
+  display: flex;
+  align-items: center;
+}
+
+.center-items-middle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.absolute-right {
+  right: 0 !important;
+  transform: translateX(0) !important;
+}
+.fixed {
+  position: fixed;
+}
+
+
+//hides until load
+[v-cloak] {
+  display: none;
+}
