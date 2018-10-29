@@ -87,7 +87,10 @@ strong {
 
 body {
     @extend .font-averta-regular;
-    font-size: $body-size;
+    font-size: 2.4rem;
+    @include bp-large {
+        font-size: $body-size;
+    }
     color: $color-black;
     letter-spacing: 0.15rem;
     line-height: 1.2;

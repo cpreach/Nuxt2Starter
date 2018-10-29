@@ -1,5 +1,5 @@
 <template>
-  <div :class="{'fixed': $store.state.mobileNavIsOpen}">
+  <div :class="{'fixed': $store.state.mobileNavIsOpen, 'loaded': loaded}" class="loading">
     <page-header id="header" :scrolled="headerScrolled" :small-header="smallHeader"/>
     <div class="outer-wrapper centered padder">
       <div class="sidebar-content-wrapper">
@@ -32,7 +32,8 @@ export default {
       footerScrolled: false,
       headerScrolled: false,
       scrolledUp: false,
-      smallHeader: false
+      smallHeader: false,
+      loaded: false
     }
   },
   mounted () {
@@ -40,6 +41,7 @@ export default {
       window.addEventListener("scroll", this.handleScroll)
       window.addEventListener("wheel", this.handleWheel)
     }
+    this.loaded = true
   },
   beforeDestroy () {
     window.removeEventListener('scroll', this.handleScroll)
