@@ -7,15 +7,74 @@ Use the with the vue <transition name="transitioname"> tag
 Simple transition used almost elsewhere
 ************/
 .trans {
-  transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 /*****************/
 /*Simple fade in - fade out transition
 /*****************************/
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 1s;
 }
-.fade-enter, .fade-leave-to {
-  opacity: 0;
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+/*******
+Page transitions
+**********/
+
+// .page-enter-active,
+// .page-leave-active {
+//     transition: all 0.25s ease-out;
+// }
+// .page-enter,
+// .page-leave-active {
+//     opacity: 0;
+//     transform-origin: 50% 50%;
+// }
+
+.qoute-enter-active,
+.qoute-leave-active {
+    transition: opacity 1s;
+}
+
+.qoute-enter-active {
+    transition-delay: 0.9s;
+}
+.qoute-enter,
+.qoute-leave-to {
+    opacity: 0;
+}
+
+.page-enter-active {
+    animation: acrossIn 0.8s ease-out both;
+}
+
+.page-leave-active {
+    animation: acrossOut 0.8s ease-in both;
+}
+
+@keyframes acrossIn {
+    0% {
+        transform: translate3d(100%, 0, 0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes acrossOut {
+    0% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate3d(100%, 0, 0);
+        opacity: 0;
+    }
 }

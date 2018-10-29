@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="146px" viewBox="0 0 150 146" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>4_arrow_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About" transform="translate(-925.000000, -1311.000000)" fill="#00FF00">
+            <g id="4_arrow_icon" transform="translate(925.000000, 1311.000000)">
+                <g id="Group-4" transform="translate(74.000000, 109.000000) rotate(180.000000) translate(-74.000000, -109.000000) translate(22.000000, 72.000000)">
+                    <polygon id="Fill-1" points="51.8518519 73.704 104 0 84.9141267 0 84.9117941 0.00506366873 77.7374465 0.00506366873 51.8518519 36.6945659"></polygon>
+                    <g id="Group">
+                        <polygon id="Fill-1-Copy" transform="translate(26.007530, 36.916110) scale(-1, 1) translate(-26.007530, -36.916110) " points="0 73.8322191 52.0150602 0 32.9778962 0 32.9755695 0.00507247774 25.8195317 0.00507247774 0 36.7584016"></polygon>
+                    </g>
+                </g>
+                <g id="Group-4-Copy" transform="translate(74.000000, 37.000000) scale(1, -1) rotate(180.000000) translate(-74.000000, -37.000000) translate(22.000000, 0.000000)">
+                    <polygon id="Fill-1" points="51.8518519 73.704 104 0 84.9141267 0 84.9117941 0.00506366873 77.7374465 0.00506366873 51.8518519 36.6945659"></polygon>
+                    <g id="Group">
+                        <polygon id="Fill-1-Copy" transform="translate(26.007530, 36.916110) scale(-1, 1) translate(-26.007530, -36.916110) " points="0 73.8322191 52.0150602 0 32.9778962 0 32.9755695 0.00507247774 25.8195317 0.00507247774 0 36.7584016"></polygon>
+                    </g>
+                </g>
+                <g id="Group-4" transform="translate(37.000000, 73.000000) scale(-1, 1) rotate(90.000000) translate(-37.000000, -73.000000) translate(-15.000000, 36.000000)">
+                    <polygon id="Fill-1" points="51.8518519 73.704 104 0 84.9141267 0 84.9117941 0.00506366873 77.7374465 0.00506366873 51.8518519 36.6945659"></polygon>
+                    <g id="Group">
+                        <polygon id="Fill-1-Copy" transform="translate(26.007530, 36.916110) scale(-1, 1) translate(-26.007530, -36.916110) " points="0 73.8322191 52.0150602 0 32.9778962 0 32.9755695 0.00507247774 25.8195317 0.00507247774 0 36.7584016"></polygon>
+                    </g>
+                </g>
+                <g id="Group-4-Copy" transform="translate(113.000000, 73.000000) scale(1, -1) rotate(90.000000) translate(-113.000000, -73.000000) translate(61.000000, 36.000000)">
+                    <polygon id="Fill-1" points="51.8518519 73.704 104 0 84.9141267 0 84.9117941 0.00506366873 77.7374465 0.00506366873 51.8518519 36.6945659"></polygon>
+                    <g id="Group">
+                        <polygon id="Fill-1-Copy" transform="translate(26.007530, 36.916110) scale(-1, 1) translate(-26.007530, -36.916110) " points="0 73.8322191 52.0150602 0 32.9778962 0 32.9755695 0.00507247774 25.8195317 0.00507247774 0 36.7584016"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

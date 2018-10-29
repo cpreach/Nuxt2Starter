@@ -1,3 +1,5 @@
+// @import url('http://fast.fonts.net/t/1.css?apiType=css&projectid=0b4ddfc0-24c4-474c-8c96-84207a556c44');
+
 /****************
 ALL TYPOGRAPHY RELEATED STUFF COMES HERE
 ******************/
@@ -7,10 +9,86 @@ We set the main font-size to 62.5%
 so 16px would be 1.6 rem! Use Rems!
 */
 html {
-  font-size: 62.5%;
-  //transition: font-size 0.5s ease-in;
+    // font-size: 62.5%; => this is 100%
+    font-size: 42.5%;
+    transition: font-size 0.5s ease-in;
+
+    @include bp-medium {
+        font-size: 47.5%;
+    }
+    @include bp-large {
+        font-size: 62.5%;
+    }
 }
 
-h1 {
-  font-size: 3rem;
+@font-face {
+    font-family: 'Averta W01 Regular1586764';
+    src: url('~assets/fonts/025b33d7-74f5-4aa8-94a0-b882e0b23521.eot?#iefix');
+    src: url('~assets/fonts/025b33d7-74f5-4aa8-94a0-b882e0b23521.eot?#iefix')
+            format('eot'),
+        url('~assets/fonts/166ce875-a649-4826-a5a0-a24f2dd89cd5.woff2')
+            format('woff2'),
+        url('~assets/fonts/fc417db9-6d91-4c85-81b1-2ff3d583d149.woff')
+            format('woff'),
+        url('~assets/fonts/04ba64d0-f98c-415f-a1a9-c785f3e94181.ttf')
+            format('truetype');
+}
+@font-face {
+    font-family: 'Averta W01 Semibold1582343';
+    src: url('~assets/fonts/63084194-2cda-4ac9-b123-7f45379756ad.eot?#iefix');
+    src: url('~assets/fonts/63084194-2cda-4ac9-b123-7f45379756ad.eot?#iefix')
+            format('eot'),
+        url('~assets/fonts/5b6b0808-79db-4639-ab19-365f715f83b9.woff2')
+            format('woff2'),
+        url('~assets/fonts/0d9ceccf-0cd7-44dc-8c2a-dbc0ed90f149.woff')
+            format('woff'),
+        url('~assets/fonts/b03141a0-a172-477f-ba2c-80e817c07f2f.ttf')
+            format('truetype');
+}
+@font-face {
+    font-family: 'Averta W01 Bold1587810';
+    src: url('~assets/fonts/4b210cf6-f4ac-438c-9671-a4472e2ff647.eot?#iefix');
+    src: url('~assets/fonts/4b210cf6-f4ac-438c-9671-a4472e2ff647.eot?#iefix')
+            format('eot'),
+        url('~assets/fonts/91271893-3829-4dc9-a79b-a47b7146022c.woff2')
+            format('woff2'),
+        url('~assets/fonts/17dd7da6-7e09-45f6-bae4-9a944baed5a6.woff')
+            format('woff'),
+        url('~assets/fonts/c50d808d-b715-4658-bfa2-d17977b03801.ttf')
+            format('truetype');
+}
+@font-face {
+    font-family: 'Averta W01 ExtraBold1581731';
+    src: url('~assets/fonts/974904fc-c726-458b-9486-a872a9a774ae.eot?#iefix');
+    src: url('~assets/fonts/974904fc-c726-458b-9486-a872a9a774ae.eot?#iefix')
+            format('eot'),
+        url('~assets/fonts/f409cb4c-a797-4b0b-9dc3-76a17288d995.woff2')
+            format('woff2'),
+        url('~assets/fonts/2ded309e-64e7-4bc7-b90e-af145940e5a5.woff')
+            format('woff'),
+        url('~assets/fonts/181f1e38-c8b5-4a3a-956e-f5fcdc7e2a94.ttf')
+            format('truetype');
+}
+
+//We define the fonts
+.font-averta-regular {
+    font-family: 'Averta W01 Regular1586764';
+}
+.font-averta-semibold {
+    font-family: 'Averta W01 Semibold1582343';
+}
+.font-averta-extrabold {
+    font-family: 'Averta W01 ExtraBold1581731';
+}
+
+strong {
+    @extend .font-averta-semibold;
+}
+
+body {
+    @extend .font-averta-regular;
+    font-size: $body-size;
+    color: $color-black;
+    letter-spacing: 0.15rem;
+    line-height: 1.2;
 }

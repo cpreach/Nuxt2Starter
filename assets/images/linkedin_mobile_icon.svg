@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 16 17 16 17 0 0 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-mobile-Navi-open" transform="translate(-61.000000, -592.000000)">
+            <g id="Group-6" transform="translate(61.000000, 427.000000)">
+                <g id="Group">
+                    <g id="Group-2" transform="translate(1.000000, 166.000000)">
+                        <circle id="Oval" stroke="#FFFFFF" fill="#000000" fill-rule="nonzero" cx="19.5" cy="19.5" r="19.5"></circle>
+                        <g id="Group-5" transform="translate(11.000000, 10.000000)">
+                            <path d="M10.03,6.045 L10.03,6 C10.02,6.016 10.009,6.031 10,6.045 L10.03,6.045 Z" id="Fill-1" fill="#1D1D1B"></path>
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-4"></g>
+                            <path d="M0,16 L4,16 L4,5 L0,5 L0,16 Z M2.01097213,0 C3.22668422,0 3.97542243,0.864864865 4,2.00043243 C4,3.11005405 3.22668422,4 1.9881501,4 L1.9644503,4 C0.770682467,4 0,3.11005405 0,2.00043243 C0,0.864864865 0.793504499,0 2.01097213,0 Z M17,16 L13.3985623,16 L13.3985623,10.4046827 C13.3985623,9.00021221 12.9888179,8.04003678 11.6861022,8.04003678 C10.6900958,8.04003678 10.0958466,8.687416 9.8370607,9.31145222 C9.74201278,9.53476692 9.71805112,9.84678503 9.71805112,10.1595812 L9.71805112,16 L6,16 C6,16 6.04792332,6.22784183 6,5.24665771 L9.71805112,5.24665771 L9.71805112,6.72816015 C10.1956869,6.01697673 11.0503195,5 12.965655,5 C15.3354633,5 17,6.79352055 17,10.0047393 L17,16 Z" id="Fill-3" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
