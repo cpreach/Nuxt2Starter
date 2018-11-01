@@ -1,0 +1,120 @@
+{
+    "dir": "ltr",
+    "lang": "nl",
+    "name": "Kammaco - René Kamm",
+    "scope": "/",
+    "display": "standalone",
+    "start_url": "https://kammaco.com/",
+    "short_name": "Kammaco",
+    "theme_color": "#ffffff",
+    "description": "Kammaco is an independent, boutique management advisory firm based in Switzerland.",
+    "orientation": "any",
+    "background_color": "#ffffff",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "/images/favicon.ico",
+            "sizes": "48x48 32x32 16x16"
+        },
+        {
+            "src": "/images/favicon.ico",
+            "sizes": "48x48 32x32 16x16"
+        },
+        {
+            "src": "/images/34ed9cc6-e767-3a6e-2874-0c1ac97471bb.webPlatform.png",
+            "sizes": "44x44",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/333bce02-3cd9-3d89-e164-fb3f6c96c414.webPlatform.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/628bc4cd-feb1-bb2c-d14d-1d524811e6c6.webPlatform.png",
+            "sizes": "1240x600",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/414980e6-9c40-af75-b616-f65d91b11fff.webPlatform.png",
+            "sizes": "300x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/9b488b5c-2a09-a503-3efb-62c3a355551b.webPlatform.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/3506f48a-eb1f-292b-73af-b7afe5d4c402.webPlatform.png",
+            "sizes": "88x88",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/87911b16-38e1-a562-9f97-b945c8332ecd.webPlatform.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/a2f47124-4955-7f2f-8225-f81b389a33fa.webPlatform.png",
+            "sizes": "50x50",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/62e17ab0-d855-5b8b-4b55-c74eea392acf.webPlatform.png",
+            "sizes": "620x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/fef50db9-7963-a222-a74e-0715beae76f7.webPlatform.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/ee5e0e91-b66b-77c8-159a-a13daa0df4c6.webPlatform.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/465de93b-f574-78ec-921b-e4a8b85920b9.webPlatform.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/e1c44499-f0cf-debe-7d86-5d774b057bed.webPlatform.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/1f8327d3-1696-ac6e-65cc-3f4ed1911a72.webPlatform.png",
+            "sizes": "36x36",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/e8f18ad1-0587-b9ef-dbea-3dc05fe4e36d.webPlatform.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/d9ad2876-ac11-9f4c-627a-37cccaa6c07d.webPlatform.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/a20e6639-9ef2-9c59-041b-b0ad42371049.webPlatform.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/6e8caffb-a9cf-3e06-4232-895d8ff8237c.webPlatform.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/2660e7c0-9841-f6a7-edf7-8f816ee5bd6e.webPlatform.png",
+            "sizes": "76x76",
+            "type": "image/png"
+        }
+    ]
+}

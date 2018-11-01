@@ -8,17 +8,17 @@
 
       <div class="address">
         <p><strong>Kammaco AG</strong><br>
-          Bäumleingasse 22 /&nbsp;4051 Basel<br>
+          Bäumleingasse 22 <slash class="slash"/>&nbsp;4051 Basel<br>
           Switzerland<br>
         </p>
       </div>
       <div class="phone">
         <br>
-        <p>T <a href="tel:+41615353030">+41 61 535 30 30</a><br>
+        <p>T <a href="tel:+41615353030" rel="noopener">+41 61 535 30 30</a><br>
         <a class="footer__email" href="mailto:hello@kammaco.com">Send an email</a></p>
       </div>
       <div class="linkedin-icon">
-        <a href="https://linkedin.com/in/rené-kamm-96a58a8" target="_blank"><img src="~assets/images/linkedin_icon.svg" title="linkedin"></a>
+        <a href="https://linkedin.com/in/rené-kamm-96a58a8" target="_blank" rel="noopener"><img src="~assets/images/linkedin_icon.svg" title="linkedin"></a>
       </div>
     </footer>
   </div>
@@ -26,9 +26,10 @@
 
 <script>
 import greenIcon from '~/components/svg/icon_shape_green'
+import slash from '~/components/svg/slash'
 
 export default {
-  components: {greenIcon},
+  components: {greenIcon, slash},
   data () {
     return {
     }
@@ -48,20 +49,32 @@ export default {
 
   @include bp-small {
     grid-template:
+      'footer' min-content /
+      1fr;
+  }
+
+  @include bp-medium {
+    grid-template:
       '. footer' min-content /
-      60px 1fr;
+      44px 1fr;
   }
 
   @include bp-large {
     grid-gap: 50px;
     grid-template:
       '. . footer footer footer footer footer .' min-content /
-      150px 1fr 150px 150px 150px 150px 150px 1fr;
+      200px 1fr 150px 150px 150px 150px 150px 1fr;
   }
 }
 footer {
-  grid-area: footer;
+  @supports not (display: grid) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 800px;
+  }
 
+  grid-area: footer;
   display: grid;
   grid-template:
     '. green-icon .' min-content
@@ -111,6 +124,10 @@ footer {
   }
 }
 
+footer p {
+  font-size: 2rem;
+}
+
 .green-icon {
   grid-area: green-icon;
   margin-top: -100px;
@@ -134,8 +151,10 @@ footer {
 .touch {
   grid-area: touch;
 
+  margin-left: -2px;
+
   @extend .font-averta-semibold;
-  font-size: 8rem;
+  font-size: 6.5rem;
 }
 
 .address {
@@ -151,6 +170,15 @@ footer {
 
   width: 40px;
   height: auto;
+
+  a {
+    width: 100%;
+    line-height: 0;
+  }
+
+  @include bp-small {
+    align-self: end;
+  }
 
   @include bp-medium {
     display: flex;
@@ -171,5 +199,10 @@ footer {
 
 .footer__email {
   border-bottom: 2px solid $color-green;
+}
+
+.slash {
+  height: 1.6rem;
+  width: 1.6rem;
 }
 </style>

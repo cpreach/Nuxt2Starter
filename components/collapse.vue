@@ -27,28 +27,25 @@ export default {
       uid: null
     }
   },
-
-  // mounted() {
-  //   if (process.browser) {
-  //     const self = this;
-  //     document.addEventListener("click", function (e) {
-  //       console.log(self.references, e)
-
-  //       let el = self.references.collapse;
-  //       let target = e.target;
-
-  //       if (el.$el !== target && !el.$el.contains(target)) {
-  //         self.opened = false;
-  //       }
-
-  //     });
-  //   }
-  // },
-  // destroyed() {
-  //   if (process.browser) {
-  //     document.removeEventListener("click", this.documentClick);
-  //   }
-  // }
+  mounted() {
+    if (process.browser) {
+      window.addEventListener("resize", this.closeCollapse)
+     }
+  },
+  beforeDestroy () {
+    window.removeEventListener('resize', this.closeCollapse)
+  },
+  methods: {
+    closeCollapse () {
+      if (process.browser) {
+        //close collapse on mobile
+        var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+        if (width < 768) {
+          this.opened = false
+        }
+      }
+    }
+  }
 }
 </script>
 
@@ -60,6 +57,8 @@ export default {
   border-bottom: 2px solid $color-green;
 
   transition: border-bottom 0.5s ease-out, max-height 0.5s ease-out;
+
+  letter-spacing: 0.1;
 
   &:hover {
     cursor: pointer;
@@ -82,8 +81,9 @@ export default {
   height: 100%;
   min-height: 7rem;
   height: 100%;
-  line-height: 2.2;
-  padding: 1.3rem 0;
+
+  display: flex;
+  align-items: center;
 
   &:hover {
     color: $color-black;
@@ -96,5 +96,6 @@ export default {
 
 .collapse__content {
   padding-bottom: 2.7rem;
+  line-height: 1.5;
 }
 </style>

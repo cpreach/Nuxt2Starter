@@ -6,11 +6,11 @@
     <defs>
         <polygon id="path-1" points="0 19.8398 21.56 19.8398 21.56 -0.0002 0 -0.0002"></polygon>
     </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Home-hover" transform="translate(-1325.000000, -3774.000000)">
             <g id="Group-3" transform="translate(525.000000, 3726.000000)">
                 <g id="linkedin_icon" transform="translate(800.000000, 48.000000)">
-                    <circle id="Oval" fill="#000000" fill-rule="nonzero" cx="24" cy="24" r="24"></circle>
+                    <circle  fill="#000000" fill-rule="nonzero" cx="24" cy="24" r="24"></circle>
                     <g id="Group-5" transform="translate(13.000000, 14.000000)">
                         <path d="M12.4434,7.9687 L12.4434,7.9237 C12.4334,7.9397 12.4224,7.9547 12.4134,7.9687 L12.4434,7.9687 Z" id="Fill-1" fill="#1D1D1B"></path>
                         <mask id="mask-2" fill="white">

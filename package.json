@@ -14,8 +14,11 @@
     },
     "dependencies": {
         "@nuxtjs/axios": "^5.0.0",
+        "@nuxtjs/google-analytics": "^2.0.2",
         "cross-env": "^5.2.0",
-        "nuxt": "^2.0.0"
+        "gsap": "^2.0.2",
+        "nuxt": "^2.0.0",
+        "vue-touch": "^2.0.0-beta.4"
     },
     "devDependencies": {
         "babel-eslint": "^8.2.1",

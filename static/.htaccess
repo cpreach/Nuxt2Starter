@@ -1,0 +1,7 @@
+#redirects to https
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.kammaco.com/$1 [R,L]
+
+#enable caching
+Cache-Control: max-age=2592000, public

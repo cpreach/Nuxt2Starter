@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="350px" height="293px" viewBox="0 0 350 293" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-    <title>icon_white_green_bg</title>
+    <title>Group 8</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <rect id="path-1" x="0" y="0" width="350" height="293"></rect>
     </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Home-hover" transform="translate(-525.000000, -926.000000)">
-            <g id="icon_white_green_bg" transform="translate(525.000000, 926.000000)">
-                <mask id="mask-2" fill="white">
-                    <use xlink:href="#path-1"></use>
-                </mask>
-                <use id="Rectangle" fill="#00FF00" fill-rule="nonzero" xlink:href="#path-1"></use>
-                <polygon id="Path" fill="#FFFFFF" mask="url(#mask-2)" points="0 293.320778 308.211397 -142.688408 195.408088 -142.688408 195.394301 -142.658453 152.991728 -142.658453 0 74.3848557"></polygon>
-                <polygon id="Path" fill="#FFFFFF" mask="url(#mask-2)" points="234.807904 114.058941 160.899816 218.683717 205.990809 293.688408 351 293.688408"></polygon>
+    <g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home_1920" transform="translate(-525.000000, -828.000000)">
+            <g id="Group" transform="translate(525.000000, 828.000000)">
+                <g id="Group-7">
+                    <g id="Group-8">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#00FF00" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="Group-7" mask="url(#mask-2)" fill="#FFFFFF">
+                            <g transform="translate(0.000000, -142.000000)" id="Fill-1">
+                                <path d="M0,436.320778 L308.211397,0.311592056 L195.408088,0.311592056 L195.394301,0.341547093 L152.991728,0.341547093 L0,217.384856 L0,436.320778 Z M234.807904,257.058941 L160.899816,361.683717 L205.990809,436.688408 L351,436.688408 L234.807904,257.058941 Z"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
             </g>
         </g>
     </g>

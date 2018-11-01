@@ -47,6 +47,11 @@ export default {
   components: {
     collapse
   },
+  head () {
+    return {
+      title: 'Delivering a Sustainable Impact',
+    }
+  },
 }
 </script>
 

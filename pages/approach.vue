@@ -40,6 +40,11 @@ export default {
   components: {
     collapse
   },
+  head () {
+    return {
+      title: 'Three different approaches',
+    }
+  },
 }
 </script>
 

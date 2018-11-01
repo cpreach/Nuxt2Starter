@@ -77,6 +77,11 @@ export default {
     collapse,
     readMore
   },
+  head () {
+    return {
+      title: 'Empowering for Growth',
+    }
+  },
 }
 </script>
 

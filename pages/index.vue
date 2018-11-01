@@ -8,7 +8,7 @@
 
     <div class="navigation-boxes">
       <div class="navigation__box navigation__box--slogan">
-        <img class="slogan__image" src="~assets/images/kammaco_descriptor.svg" >
+        <img class="slogan__image" alt="slogan Image" src="~assets/images/kammaco_descriptor.svg" >
       </div>
 
       <div class="navigation__box navigation__box--services" @click="goToPage('services')" >
@@ -16,8 +16,10 @@
       </div>
 
       <div class="navigation__box navigation__box--approach" @click="goToPage('approach')" >
-        <span class="navigation__box-text">Approach</span>
-        <img class="approach__arrow" src="~assets/images/green_arrow_up.svg">
+        <div class="navigation__box--approach--content">
+          <span class="navigation__box-text">Approach</span>
+          <img class="approach__arrow" title="approach__arrow" src="~assets/images/green_arrow_up.svg">
+        </div>
       </div>
       <div class="navigation__box navigation__box--about" @click="goToPage('about')" >
         <span class="navigation__box-text">About</span>
@@ -29,6 +31,11 @@
 <script>
 
 export default {
+  head () {
+    return {
+      title: 'Visions for Growth',
+    }
+  }
 }
 </script>
 
@@ -40,6 +47,11 @@ section {
 }
 
 .navigation-boxes {
+  @supports not (display: grid) {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
   display: grid;
   grid-template:
     '. slogan .' 142px
@@ -98,8 +110,9 @@ section {
   @extend .font-averta-semibold;
   font-size: 4rem;
 
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: row;
 
   &:hover {
     cursor: pointer;
@@ -126,13 +139,19 @@ section {
   }
 
   &--services {
+    display: grid;
+    grid-template:
+      '. service-text .' 100% /
+      1fr 1fr 1fr;
+
     margin-top: -40px;
     grid-area: services;
     height: 100%;
     background-size: 100%;
     background-position: center center;
-    background-image: url('~assets/images/icon_white_green_bg.svg');
+    background-image: url('~assets/images/icon_white_green_bg.jpg');
     background-repeat: no-repeat;
+    background-color: white;
 
     @extend .trans;
 
@@ -146,11 +165,12 @@ section {
     }
 
     .navigation__box-text {
+      grid-area: service-text;
       @extend .trans;
       bottom: -14px;
 
       @include bp-small {
-        bototm: -25px;
+        bottom: -25px;
       }
     }
 
@@ -166,6 +186,11 @@ section {
   }
 
   &--approach {
+    display: grid;
+    grid-template:
+      '. approach-content .' 100% /
+      1fr 1fr 1fr;
+
     background-color: black;
     grid-area: approach;
     height: 100%;
@@ -180,6 +205,10 @@ section {
       height: 395px;
       margin-top: -50px;
       margin-bottom: 130px;
+    }
+
+    .navigation__box--approach--content {
+      grid-area: approach-content;
     }
 
     .navigation__box-text {
@@ -228,6 +257,11 @@ section {
   }
 
   &--about {
+    display: grid;
+    grid-template:
+      '. about-text .' 100% /
+      1fr 1fr 1fr;
+
     @extend .trans;
     grid-area: about;
     background-size: 100%;
@@ -246,6 +280,7 @@ section {
     }
 
     .navigation__box-text {
+      grid-area: about-text;
       @extend .trans;
       bottom: 0;
 
