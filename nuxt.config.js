@@ -19,6 +19,10 @@ module.exports = {
                 content: 'width=device-width, initial-scale=1'
             },
             {
+                name: 'google-site-verification',
+                content: 'bZgnTgZ_kZl04LWY0YO3uaNLusnrEfz147DawB_AXtM'
+            },
+            {
                 hid: 'description',
                 name: 'description',
                 content:
@@ -100,6 +104,7 @@ module.exports = {
     modules: [
         // Doc: https://github.com/nuxt-community/axios-module#usage
         '@nuxtjs/axios',
+        '@nuxtjs/sitemap',
         [
             'nuxt-sass-resources-loader',
             [
@@ -123,6 +128,16 @@ module.exports = {
         // See https://github.com/nuxt-community/axios-module#options
     },
 
+    /****
+     * Sitemap module config
+     */
+    sitemap: {
+        path: '/sitemap.xml',
+        hostname: 'https://kammaco.com',
+        cacheTime: 1000 * 60 * 15,
+        gzip: true,
+        generate: true // Enable me when using nuxt generate
+    },
     /*
   ** Build configuration
   */
