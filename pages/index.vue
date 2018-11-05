@@ -166,6 +166,7 @@ section {
 
     .navigation__box-text {
       grid-area: service-text;
+      justify-self: center;
       @extend .trans;
       bottom: -14px;
 
@@ -188,8 +189,8 @@ section {
   &--approach {
     display: grid;
     grid-template:
-      '. approach-content .' 100% /
-      1fr 1fr 1fr;
+      'approach-content' 100% /
+     1fr;
 
     background-color: black;
     grid-area: approach;
@@ -209,6 +210,10 @@ section {
 
     .navigation__box--approach--content {
       grid-area: approach-content;
+
+      display: flex;
+      justify-content: center;
+      position: relative;
     }
 
     .navigation__box-text {
@@ -281,6 +286,7 @@ section {
 
     .navigation__box-text {
       grid-area: about-text;
+      justify-self: center;
       @extend .trans;
       bottom: 0;
 
