@@ -67,6 +67,11 @@ module.exports = {
                 property: 'og:description',
                 content:
                     'Kammaco is an independent, boutique management advisory firm based in Switzerland.'
+            },
+            {
+                hid: 'keywords',
+                name: 'keywords',
+                content: 'Rene Kamm, Basel, Watches, Management, Rene, Kamm'
             }
         ],
         noscript: [{ innerHTML: 'This website requires JavaScript.' }],
