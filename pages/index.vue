@@ -48,8 +48,7 @@ section {
 
 .navigation-boxes {
   @supports not (display: grid) {
-    width: 100%;
-    margin-bottom: 100px;
+    max-width: 400px;
   }
 
   display: grid;
@@ -106,6 +105,7 @@ section {
 .navigation__box {
   position: relative;
   width: 100%;
+  margin-bottom: 100px;
 
   @extend .font-averta-semibold;
   font-size: 4rem;
@@ -159,14 +159,18 @@ section {
       margin-top: 43px;
     }
 
-    @include bp-medium {
+    @include bp-small {
       margin-top: 120px;
       height: 301px;
     }
 
     .navigation__box-text {
+      left: 50%;
+      transform: translateX(-50%);
+
       grid-area: service-text;
       justify-self: center;
+
       @extend .trans;
       bottom: -14px;
 
@@ -190,7 +194,7 @@ section {
     display: grid;
     grid-template:
       'approach-content' 100% /
-     1fr;
+      1fr;
 
     background-color: black;
     grid-area: approach;
@@ -211,9 +215,7 @@ section {
     .navigation__box--approach--content {
       grid-area: approach-content;
 
-      display: flex;
-      justify-content: center;
-      position: relative;
+      width: 100%;
     }
 
     .navigation__box-text {
@@ -222,7 +224,9 @@ section {
       top: 80px;
       max-width: 212px;
       transform: scale(1);
-      text-align: center;
+
+      left: 50%;
+      transform: translateX(-50%);
 
       line-height: 5rem;
 
@@ -241,6 +245,9 @@ section {
       position: absolute;
       bottom: -84px;
       width: 234px;
+
+      left: 50%;
+      transform: translateX(-50%);
 
       @include bp-small {
         // bottom: -70px;
@@ -284,9 +291,18 @@ section {
       height: 375px;
     }
 
+    @supports not (display: grid) {
+      display: flex;
+      justify-content: center;
+    }
+
     .navigation__box-text {
       grid-area: about-text;
-      justify-self: center;
+
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
       @extend .trans;
       bottom: 0;
 

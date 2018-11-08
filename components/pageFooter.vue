@@ -67,12 +67,7 @@ export default {
   }
 }
 footer {
-  @supports not (display: grid) {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 800px;
-  }
+  margin: 0 auto;
 
   grid-area: footer;
   display: grid;
@@ -136,7 +131,7 @@ footer p {
   justify-content: center;
 
   @include bp-small {
-    display: block;
+    // display: block;
   }
 
   @include bp-medium {

@@ -2,12 +2,10 @@
   <div :class="{'fixed': $store.state.mobileNavIsOpen, 'loaded': loaded}" class="loading">
 
     <div class="not-supported">
-      <img src="~/assets/images/logo.svg">
-      <h2 class="page-intro">
+      <p>
         Your browser is outdated and not <span class="highlight">supported</span>. Please
         install a newer version or <a class="mailto__link" href="http://outdatedbrowser.com/" target="_blank" rel="noopener">try</a> another one.<br><br>
-        <a class="mailto__link" href="mailto:hello@kammaco.com">Send an email</a>
-      </h2>
+      </p>
     </div>
 
     <page-header id="header" :scrolled="headerScrolled" />
@@ -160,33 +158,62 @@ export default {
   }
 }
 
-.not-supported {
-  padding: 40px;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  background-color: white;
-  top: 0;
-  left: 0;
-  z-index: 20000;
+// .not-supported {
+//   padding: 40px;
+//   height: 100vh;
+//   width: 100vw;
+//   position: fixed;
+//   background-color: white;
+//   top: 0;
+//   left: 0;
+//   z-index: 20000;
 
-  display: none;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+//   display: none;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
 
-  img {
-    margin-bottom: 100px;
-  }
+//   img {
+//     margin-bottom: 100px;
+//   }
 
+//   @supports not (display: grid) {
+//     display: flex;
+//   }
+// }
+
+// .loading {
+//   @supports not (display: grid) {
+//     position: fixed;
+//   }
+// }
+
+//Fallback CSS Grid
+.main-content {
   @supports not (display: grid) {
-    display: flex;
+    .slogan-svg {
+      display: none;
+
+      @include bp-medium {
+        display: block;
+      }
+    }
+    @include bp-medium {
+      padding-left: 200px;
+    }
   }
 }
+.not-supported {
+  position: absolute;
+  top: 40px;
+  z-index: 2000;
+  left: 50%;
+  transform: translateX(-50%);
 
-.loading {
+  display: none;
+
   @supports not (display: grid) {
-    position: fixed;
+    display: block;
   }
 }
 </style>
