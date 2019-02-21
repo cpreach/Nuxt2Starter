@@ -3,25 +3,29 @@
     <h2 class="page-intro">
       <span class="highlight">Visions for Growth</span> — Kammaco is an independent, boutique management advisory
       firm based in Switzerland. Our clients are investors such as private equity
-      and venture capital groups, as well as corporate boards of directors and senior management.
+      and venture capital groups, as well as corporate boards of directors and senior management..
     </h2>
 
     <div class="navigation-boxes">
       <div class="navigation__box navigation__box--slogan">
-        <img class="slogan__image" alt="slogan Image" src="~assets/images/kammaco_descriptor.svg" >
+        <img class="slogan__image" alt="slogan Image" src="~assets/images/kammaco_descriptor.svg">
       </div>
 
-      <div class="navigation__box navigation__box--services" @click="goToPage('services')" >
+      <div class="navigation__box navigation__box--services" @click="goToPage('services')">
         <span class="navigation__box-text">Services</span>
       </div>
 
-      <div class="navigation__box navigation__box--approach" @click="goToPage('approach')" >
+      <div class="navigation__box navigation__box--approach" @click="goToPage('approach')">
         <div class="navigation__box--approach--content">
           <span class="navigation__box-text">Approach</span>
-          <img class="approach__arrow" title="approach__arrow" src="~assets/images/green_arrow_up.svg">
+          <img
+            class="approach__arrow"
+            title="approach__arrow"
+            src="~assets/images/green_arrow_up.svg"
+          >
         </div>
       </div>
-      <div class="navigation__box navigation__box--about" @click="goToPage('about')" >
+      <div class="navigation__box navigation__box--about" @click="goToPage('about')">
         <span class="navigation__box-text">About</span>
       </div>
     </div>
@@ -29,11 +33,10 @@
 </template>
 
 <script>
-
 export default {
-  head () {
+  head() {
     return {
-      title: 'Visions for Growth',
+      title: 'Visions for Growth'
     }
   }
 }
