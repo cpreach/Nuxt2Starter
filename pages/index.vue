@@ -3,7 +3,7 @@
     <h2 class="page-intro">
       <span class="highlight">Visions for Growth</span> — Kammaco is an independent, boutique management advisory
       firm based in Switzerland. Our clients are investors such as private equity
-      and venture capital groups, as well as corporate boards of directors and senior management..
+      and venture capital groups, as well as corporate boards of directors and senior management.
     </h2>
 
     <div class="navigation-boxes">
